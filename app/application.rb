@@ -6,11 +6,13 @@ class Application
 
     if req.path.match(/items/)
 
-      item = req.path.split('/items/').last
+      item_name = req.path.split('/items/').last
 
-      if @@items.include?(item)
+      if @@items.find do |item|
+        item.name = item_name
+      end
 
-      resp.write item.price
+      resp.write item_name.price
 
       end
 
