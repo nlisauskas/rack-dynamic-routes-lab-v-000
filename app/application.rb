@@ -12,7 +12,7 @@ class Application
         item.name = item_name
       end
 
-      resp.write item.price
+      resp.write item_name.price
 
       end
 
