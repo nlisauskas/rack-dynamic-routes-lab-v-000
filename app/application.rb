@@ -10,7 +10,7 @@ class Application
 
       if @@items.include?(item)
 
-      resp.write "#{item.price}"
+      resp.write item.price
 
       end
 
