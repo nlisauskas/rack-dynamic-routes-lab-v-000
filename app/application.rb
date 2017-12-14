@@ -13,8 +13,6 @@ class Application
         resp.write item.price
       end
 
-
-
       end
 
     elsif req.path.match(/items/)
