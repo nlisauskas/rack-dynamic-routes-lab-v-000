@@ -12,13 +12,11 @@ class Application
         item.name == item_name
         resp.write item.price
       end
-
-      end
-
-    elsif req.path.match(/items/)
-
+    else
       resp.write "Item not found"
       resp.status = 400
+
+      end
 
     else
       resp.write "Route not found"
