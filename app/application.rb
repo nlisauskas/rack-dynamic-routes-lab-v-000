@@ -10,9 +10,10 @@ class Application
 
       if @@items.find do |item|
         item.name == item_name
+        resp.write item.price
       end
 
-      resp.write item_name.price
+
 
       end
 
